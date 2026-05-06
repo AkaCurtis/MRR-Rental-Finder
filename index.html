@@ -15,19 +15,23 @@
         }
         .crypto-address {
             font-family: 'Courier New', monospace;
-            background-color: #f8f9fa;
+            background-color: #2d3748;
+            color: #e2e8f0;
             padding: 8px 12px;
             border-radius: 6px;
-            border: 1px solid #dee2e6;
+            border: 1px solid #4a5568;
             word-break: break-all;
         }
         .card-custom {
             border: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #2d3748;
+            color: #e2e8f0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             transition: transform 0.2s ease-in-out;
         }
         .card-custom:hover {
             transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
         }
         .gradient-header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -56,7 +60,7 @@
         }
     </style>
 </head>
-<body class="bg-light">
+<body style="background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%); min-height: 100vh;">
     <div class="container py-5">
         <!-- Header -->
         <div class="row mb-5">
@@ -261,8 +265,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="alert alert-light border-0 bg-light mt-3">
-                            <i class="bi bi-info-circle-fill text-primary me-2"></i>
+                        <div class="alert alert-dark border-0 mt-3" style="background-color: #1a202c; border: 1px solid #4a5568;">
+                            <i class="bi bi-info-circle-fill text-info me-2"></i>
                             <strong>Pro Tip:</strong> The bot defaults to BTC so no need to select it from the list!
                         </div>
                     </div>
@@ -286,15 +290,15 @@
                         <p class="text-center mb-4">If you find this bot helpful, consider making a donation!</p>
                         <div class="row g-3">
                             <div class="col-lg-6">
-                                <div class="card bg-white">
+                                <div class="card" style="background-color: #1a202c; border: 1px solid #4a5568;">
                                     <div class="card-body">
                                         <div class="d-flex align-items-center mb-2">
                                             <i class="bi bi-currency-bitcoin text-warning fs-4 me-2"></i>
-                                            <h6 class="mb-0 text-dark fw-bold">Bitcoin (BTC)</h6>
+                                            <h6 class="mb-0 text-light fw-bold">Bitcoin (BTC)</h6>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between">
                                             <code class="crypto-address flex-grow-1 me-2">bc1q37dlrvl0ls0em9ue6ypzlshpnqtyw0avkvwt35</code>
-                                            <button class="btn btn-sm btn-outline-primary copy-btn" onclick="copyToClipboard('bc1q37dlrvl0ls0em9ue6ypzlshpnqtyw0avkvwt35')">
+                                            <button class="btn btn-sm btn-outline-light copy-btn" onclick="copyToClipboard('bc1q37dlrvl0ls0em9ue6ypzlshpnqtyw0avkvwt35')">
                                                 <i class="bi bi-clipboard"></i>
                                             </button>
                                         </div>
@@ -302,15 +306,15 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="card bg-white">
+                                <div class="card" style="background-color: #1a202c; border: 1px solid #4a5568;">
                                     <div class="card-body">
                                         <div class="d-flex align-items-center mb-2">
                                             <i class="bi bi-circle-fill text-primary fs-4 me-2"></i>
-                                            <h6 class="mb-0 text-dark fw-bold">Ethereum (ETH)</h6>
+                                            <h6 class="mb-0 text-light fw-bold">Ethereum (ETH)</h6>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between">
                                             <code class="crypto-address flex-grow-1 me-2">0x6731a52c5cb21d842261c721824923c9712ee95d</code>
-                                            <button class="btn btn-sm btn-outline-primary copy-btn" onclick="copyToClipboard('0x6731a52c5cb21d842261c721824923c9712ee95d')">
+                                            <button class="btn btn-sm btn-outline-light copy-btn" onclick="copyToClipboard('0x6731a52c5cb21d842261c721824923c9712ee95d')">
                                                 <i class="bi bi-clipboard"></i>
                                             </button>
                                         </div>
@@ -318,15 +322,15 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <div class="card bg-white">
+                                <div class="card" style="background-color: #1a202c; border: 1px solid #4a5568;">
                                     <div class="card-body">
                                         <div class="d-flex align-items-center mb-2">
                                             <i class="bi bi-circle-fill text-info fs-4 me-2"></i>
-                                            <h6 class="mb-0 text-dark fw-bold">Litecoin (LTC)</h6>
+                                            <h6 class="mb-0 text-light fw-bold">Litecoin (LTC)</h6>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between">
                                             <code class="crypto-address flex-grow-1 me-2">ltc1qsyny65w69c9n7fqv4g3vnktr4n0mcz28ne9qwe</code>
-                                            <button class="btn btn-sm btn-outline-primary copy-btn" onclick="copyToClipboard('ltc1qsyny65w69c9n7fqv4g3vnktr4n0mcz28ne9qwe')">
+                                            <button class="btn btn-sm btn-outline-light copy-btn" onclick="copyToClipboard('ltc1qsyny65w69c9n7fqv4g3vnktr4n0mcz28ne9qwe')">
                                                 <i class="bi bi-clipboard"></i>
                                             </button>
                                         </div>
@@ -334,15 +338,15 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <div class="card bg-white">
+                                <div class="card" style="background-color: #1a202c; border: 1px solid #4a5568;">
                                     <div class="card-body">
                                         <div class="d-flex align-items-center mb-2">
                                             <i class="bi bi-circle-fill text-warning fs-4 me-2"></i>
-                                            <h6 class="mb-0 text-dark fw-bold">Dogecoin (DOGE)</h6>
+                                            <h6 class="mb-0 text-light fw-bold">Dogecoin (DOGE)</h6>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between">
                                             <code class="crypto-address flex-grow-1 me-2">DEMedHZesQYamDQ3tyQeWuuJSN4ieqyjuH</code>
-                                            <button class="btn btn-sm btn-outline-primary copy-btn" onclick="copyToClipboard('DEMedHZesQYamDQ3tyQeWuuJSN4ieqyjuH')">
+                                            <button class="btn btn-sm btn-outline-light copy-btn" onclick="copyToClipboard('DEMedHZesQYamDQ3tyQeWuuJSN4ieqyjuH')">
                                                 <i class="bi bi-clipboard"></i>
                                             </button>
                                         </div>
@@ -350,15 +354,15 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <div class="card bg-white">
+                                <div class="card" style="background-color: #1a202c; border: 1px solid #4a5568;">
                                     <div class="card-body">
                                         <div class="d-flex align-items-center mb-2">
                                             <i class="bi bi-circle-fill text-success fs-4 me-2"></i>
-                                            <h6 class="mb-0 text-dark fw-bold">Bitcoin Cash (BCH)</h6>
+                                            <h6 class="mb-0 text-light fw-bold">Bitcoin Cash (BCH)</h6>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between">
                                             <code class="crypto-address flex-grow-1 me-2">bitcoincash:qp9pgk7m3r9jtk9nmnw2kp5lkeezdhnqayen2uqdh4</code>
-                                            <button class="btn btn-sm btn-outline-primary copy-btn" onclick="copyToClipboard('bitcoincash:qp9pgk7m3r9jtk9nmnw2kp5lkeezdhnqayen2uqdh4')">
+                                            <button class="btn btn-sm btn-outline-light copy-btn" onclick="copyToClipboard('bitcoincash:qp9pgk7m3r9jtk9nmnw2kp5lkeezdhnqayen2uqdh4')">
                                                 <i class="bi bi-clipboard"></i>
                                             </button>
                                         </div>
@@ -380,13 +384,13 @@
                 const button = event.target.closest('button');
                 const originalIcon = button.innerHTML;
                 button.innerHTML = '<i class="bi bi-check"></i>';
-                button.classList.remove('btn-outline-primary');
+                button.classList.remove('btn-outline-light');
                 button.classList.add('btn-success');
                 
                 setTimeout(function() {
                     button.innerHTML = originalIcon;
                     button.classList.remove('btn-success');
-                    button.classList.add('btn-outline-primary');
+                    button.classList.add('btn-outline-light');
                 }, 1000);
             }).catch(function(err) {
                 console.error('Could not copy text: ', err);
